@@ -1,4 +1,4 @@
-# 🚀 Edge Image Gen
+# 🚀 Edge Image
 
 一个部署在 Cloudflare 全球边缘网络上的 **AI 文本到图像（Text-to-Image）生成器**。只需输入一句话，即可在几秒钟内获得由 Stable Diffusion 模型生成的精美图片。
 
@@ -24,42 +24,9 @@
 -   **语言**: [TypeScript](https://www.typescriptlang.org/)
 -   **CI/CD**: [GitHub Actions](https://github.com/features/actions)
 
-## ⚙️ 如何开始
+## ⚙️ 快速开始
 
-### 1. 环境准备
-
--   安装 [Node.js](https://nodejs.org/) (v20 或更高版本)
--   一个 [Cloudflare](https://dash.cloudflare.com/) 账户
-
-### 2. 本地安装
-
-```bash
-# 1. 克隆仓库
-git clone https://github.com/leouoq/pixel-edge.git
-
-# 2. 进入项目目录
-cd pixel-edge
-
-# 3. 安装依赖
-npm install
-```
-
-### 3. 配置
-
-#### a. `wrangler.toml` (关键)
-
-这是项目的核心配置文件。**确保你已经启用了 AI 绑定**。
-
-```toml
-name = "pixel-edge"
-main = "src/index.ts"
-compatibility_date = "2024-04-01"
-
-[ai]
-binding = "AI"
-```
-
-#### b. GitHub Secrets (用于自动部署)
+### 1. 直接fork本项目，配置环境变量
 
 为了让 GitHub Actions 能够自动部署，请在你的 GitHub 仓库中设置以下 Secrets:
 (`Settings` -> `Secrets and variables` -> `Actions`)
@@ -67,13 +34,11 @@ binding = "AI"
 -   `CLOUDFLARE_API_TOKEN`: 你的 Cloudflare API 令牌。你可以在 [这里](https://dash.cloudflare.com/profile/api-tokens) 创建一个，使用 `Edit Cloudflare Workers` 模板。
 -   `CLOUDFLARE_ACCOUNT_ID`: 你的 Cloudflare 账户 ID。你可以在 URL 看到 https://dash.cloudflare.com/你的 Cloudflare 账户 ID/home/domains
 
-### 4. 本地开发
-
-运行以下命令以启动本地开发服务器。**注意：本地环境无法真正调用 GPU 运行 AI 模型，此步骤主要用于测试路由是否正常。**
-
-```bash
-npm run dev
-```
+### 2. 运行 GitHub Actions
+- 打开 GitHub Actions 
+- 点击 Deploy to Cloudflare Workers 
+- 找到并点击 Run workflow 
+- 最后点击绿色 Run workflow
 
 ## 🚀 使用方法
 
