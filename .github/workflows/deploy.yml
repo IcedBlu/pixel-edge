@@ -1,0 +1,36 @@
+name: Deploy to Cloudflare Workers
+
+# 触发机制：当 main 分支有代码 push 时触发
+on:
+  push:
+    branches:
+      #- main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      # 1. 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. 安装 Node.js (虽然 wrangler action 会自动处理，但显式声明是个好习惯)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. 安装依赖 (npm install)
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. 部署到 Cloudflare
+      - name: Deploy to Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }} # 也可以在这里配置，或者直接读取 wrangler.toml
+          # 如果你的 account_id 已经写在 wrangler.toml 里了，
+          # 下面这行 command 可以省略，默认就是 deploy
+          # command: deploy 
