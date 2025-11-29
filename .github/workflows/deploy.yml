@@ -31,7 +31,4 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }} # 也可以在这里配置，或者直接读取 wrangler.toml
-          # 如果你的 account_id 已经写在 wrangler.toml 里了，
-          # 下面这行 command 可以省略，默认就是 deploy
-          # command: deploy 
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
