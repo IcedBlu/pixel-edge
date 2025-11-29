@@ -1,4 +1,4 @@
-# 🚀 Edge Image
+# 🚀 Pixel Edge
 
 一个部署在 Cloudflare 全球边缘网络上的 **AI 文本到图像（Text-to-Image）生成器**。只需输入一句话，即可在几秒钟内获得由 Stable Diffusion 模型生成的精美图片。
 
