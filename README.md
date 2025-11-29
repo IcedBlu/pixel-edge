@@ -4,8 +4,7 @@
 
 ### 🤯 现场演示
 
-![Live Demo GIF](https://github.com/YourUsername/pixel-edge/blob/main/demo.gif?raw=true)
-*(请将此 GIF 替换为你自己项目的录屏)*
+![Live Demo](https://github.com/leouoq/pixel-edge/blob/main/pixeledge.png)
 
 ---
 
@@ -35,8 +34,8 @@
 ### 2. 本地安装
 
 ```bash
-# 1. 克隆你的仓库
-git clone https://github.com/YourUsername/pixel-edge.git
+# 1. 克隆仓库
+git clone https://github.com/leouoq/pixel-edge.git
 
 # 2. 进入项目目录
 cd pixel-edge
@@ -65,8 +64,8 @@ binding = "AI"
 为了让 GitHub Actions 能够自动部署，请在你的 GitHub 仓库中设置以下 Secrets:
 (`Settings` -> `Secrets and variables` -> `Actions`)
 
--   `CLOUDFLARE_API_TOKEN`: 你的 Cloudflare API 令牌。
--   `CLOUDFLARE_ACCOUNT_ID`: 你的 Cloudflare 账户 ID。
+-   `CLOUDFLARE_API_TOKEN`: 你的 Cloudflare API 令牌。你可以在 [这里](https://dash.cloudflare.com/profile/api-tokens) 创建一个，使用 `Edit Cloudflare Workers` 模板。
+-   `CLOUDFLARE_ACCOUNT_ID`: 你的 Cloudflare 账户 ID。你可以在 URL 看到 https://dash.cloudflare.com/你的 Cloudflare 账户 ID/home/domains
 
 ### 4. 本地开发
 
